@@ -1,0 +1,35 @@
+<ngx-loading-bar [includeSpinner]='false'></ngx-loading-bar>
+<nav class="navbar  navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand  mb-3" > <h2>NewsWeb</h2></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+       <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="topNews" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Top News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="" routerLink="technology"  routerLinkActive="active">Technology News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="" routerLink="business"  routerLinkActive="active">Business News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="" routerLink="sports"  routerLinkActive="active">Sports News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="" routerLink="entertaiment"  routerLinkActive="active">Entertaiment News</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="text-center">
+  <p>&copy; 2021 NewsWeb</p>
+</footer>
+
